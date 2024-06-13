@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<center>
+<div class="container">
+    <p>Password Generator</p>
+    <div class="wrapper">
+        <div class="input-box">
+
+            <input id="password" type="text" disabled >
+           <button id="copy" onclick="copyPassword()">Copy</button>
+
+        </div>
+        <div class="pass-setting">
+            <label class="title">Password Setting</label>
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" checked id="lowercase">
+                    <label for="lowercase">Lowercase(a-z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" checked id="uppercase">
+                    <label for="uppercase">Uppercase (A-Z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="number" checked>
+                    <label for="number">Number (1-10)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="symbols" checked>Symbols (!-$^+)               
+                 </li>
+                 <li class="option">
+                    <input type="checkbox" id="spaces">
+                    <label for="spaces">Include Spaces</label>
+                 </li>
+                 <li class="option">
+                    <input type="checkbox" id="exc-duplicate" >
+                    <label for="exc-duplicate">Exclude Duplicate</label>
+                 </li>
+            </ul>
+        </div>
+        <button class="generate-btn" id="generate" onclick="generatepassword()">Generate Password</button>
+
+    </div>
+</div>
+</center>
+<script src="pass.js"></script>
+</body>
+</html>
